@@ -23,3 +23,8 @@ app.include_router(predict.router)
 @app.get("/")
 def home():
     return {"message": "Welcome to FruitVision API"}
+
+@app.on_event("startup")
+async def startup_event():
+    print("🚀 FastAPI is starting up and ready to serve!")
+

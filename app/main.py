@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 from app.routers import predict
 from fastapi.staticfiles import StaticFiles
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 
 app = FastAPI(title="FruitVision API")

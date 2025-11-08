@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+torch
+ultralytics
+tensorflow
+pillow
+opencv-python
+pymongo
+python-dotenv

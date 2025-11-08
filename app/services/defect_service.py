@@ -2,6 +2,8 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import threading
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # ép TensorFlow không dùng GPU
 
 model_defect = None  # Ban đầu chưa load
 

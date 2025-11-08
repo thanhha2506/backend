@@ -2,7 +2,7 @@ fastapi
 uvicorn
 torch
 ultralytics
-tensorflow
+tensorflow-cpu==2.14.0
 pillow
 opencv-python
 pymongo
